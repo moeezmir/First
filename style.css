@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    background-color: rgb(135, 160, 206);
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 56px;
+    margin: 10px 34px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(3, 16, 90);
+    position: absolute;
+    top: 0%;
+    height: 90px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    margin: auto;
+}
+button{
+    display: block;
+    width: 10%;
+    border: none;
+    border-radius:10%;
+    background-color: #04AA6D;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+ }
+button a {
+    text-decoration: none;
+    color: black
+}
+
+section {
+    margin-left: 50px;
+}
+
+#navbar{
+    width: 1900px;
+}
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+        /* Prevent horizontal overflow */
+    }
+
+    #navbar {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    #navbar #logo img {
+        height: 50px;
+        margin: 0;
+    }
+
+    #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #navbar ul li {
+        float: left;
+    }
+
+    #navbar ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+    }
+
+    #navbar ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    @media screen and (max-width: 800px) {
+        #navbar ul {
+            display: none;
+            flex-direction: column;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #333;
+            padding-top: 50px;
+        }
+
+        #navbar ul li {
+            float: none;
+            width: 100%;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+        section {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        button {
+            width: auto;
+            margin: 5px 0;
+            padding: 5px;
+            font-size: 14px;
+        }
+    }
+
+    section {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    ol {
+        padding-left: 20px;
+        /* Ensure proper indentation */
+    }
+
+    button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 5px;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    marquee h1 {
+        margin: 0;
+    }
+
+    #searchBar {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        border: none;
+        font-size: 17px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #searchBar {
+            width: 10%;
+            margin: 10px 0;
+        }
+    }
+
+    .search-container {
+        margin: 20px;
+    }
+    
+    #searchInput {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    #resultList {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #resultList li {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    
